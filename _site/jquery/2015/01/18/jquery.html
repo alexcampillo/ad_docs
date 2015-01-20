@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Useful JQuery</title>
+  <meta name="description" content="JQuery is a JavaScript framework that makes manipulating DOM elements simple. It also simplifies other processes such as querying data from both the web or a...">
+
+  <link rel="stylesheet" href="http://alexcampillo.github.io/ad_docs//css/main.css">
+  <link rel="canonical" href="http://127.0.0.1:4000http://alexcampillo.github.io/ad_docs//jquery/2015/01/18/jquery.html">
+  <link rel="alternate" type="application/rss+xml" title="website" href="http://127.0.0.1:4000http://alexcampillo.github.io/ad_docs//feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="http://alexcampillo.github.io/ad_docs//">Home</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="http://alexcampillo.github.io/ad_docs//about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Useful JQuery</h1>
+    <p class="post-meta">Jan 18, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>JQuery is a JavaScript framework that makes manipulating DOM elements simple. It also simplifies other processes such as querying data from both the web or a database. Most modern front end frameworks either directly integrate with jQuery or rely on it as a foundation.</p>
+
+<h4 id="some-advantages">Some advantages</h4>
+
+<ul>
+  <li>cross browser compatable</li>
+  <li>less code</li>
+  <li>great documentation/large user community</li>
+  <li>flexible (plays nice with other frameworks)</li>
+</ul>
+
+<h2 id="getting-started">Getting Started</h2>
+<p>Include jQuery in the footer of your HTML document or the ‘footer.html’ file in the jekyll ‘_includes’ folder. put your jQuery in a ‘script.js’ file, make sure it goes below the jQuery include file.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/script.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></div>
+
+<p>Inside of your ‘script.js’ file wrap all of your jQuery in the following function.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+	<span class="cm">/* add your code here */</span>
+<span class="p">});</span></code></pre></div>
+
+<p>This ensures the code won’t execute until after the HTML loads. If your jQuery loads first, it won’t have any DOM elements to grab on to.</p>
+
+<h2 id="events">Events</h2>
+<p>Events are website behavior triggered by a user’s interaction. </p>
+
+<h4 id="common-events">Common events</h4>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">.</span><span class="nx">click</span><span class="p">();</span>
+<span class="p">.</span><span class="nx">submit</span><span class="p">();</span>
+<span class="p">.</span><span class="nx">keypress</span><span class="p">();</span></code></pre></div>
+
+<h4 id="event-handlers">Event handlers</h4>
+<p>Event handlers are functions within the event that will execute upon a user’s interaction with the selected DOM element.</p>
+
+<h2 id="jquery-methods">JQuery Methods</h2>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">.</span><span class="nx">hide</span><span class="p">();</span>
+<span class="p">.</span><span class="nx">show</span><span class="p">();</span>
+<span class="p">.</span><span class="nx">toggle</span><span class="p">();</span>
+<span class="p">.</span><span class="nx">addClass</span><span class="p">();</span>
+<span class="p">.</span><span class="nx">removeClass</span><span class="p">();</span>
+<span class="p">.</span><span class="nx">toggleClass</span><span class="p">();</span></code></pre></div>
+
+<h4 id="hide">.hide()</h4>
+<p>hides the selected HTML element</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.DOMElement&#39;</span><span class="p">).</span><span class="nx">submit</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.otherElement&#39;</span><span class="p">).</span><span class="nx">hide</span><span class="p">();</span>
+<span class="p">}</span></code></pre></div>
+
+<h4 id="show">.show()</h4>
+<p>Shows the selected HTML element</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.DOMElement&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.otherElement&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+<span class="p">}</span></code></pre></div>
+
+<h4 id="toggle">.toggle()</h4>
+<p>Alternates hiding and showing an element, typically used in hiding and showing navigation menu.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.DOMElement&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.otherElement&#39;</span><span class="p">).</span><span class="nx">toggle</span><span class="p">();</span>
+<span class="p">}</span></code></pre></div>
+
+<h4 id="addclass">.addClass()</h4>
+<p>Adds a CSS class to an element, good for error messages and confirmation forms. </p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.DOMElement&#39;</span><span class="p">).</span><span class="nx">submit</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.otherElement&#39;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;classToAdd&#39;</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+
+<h4 id="removeclass">.removeClass()</h4>
+<p>Removes a class from an element, good for error messages and confirmation forms.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.DOMElement&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.otherElement&#39;</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">&#39;classToRemove&#39;</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+
+<h4 id="toggleclass">.toggleClass()</h4>
+<p>Alternates adding and removing a class from an element, good for error messages, confirmation forms, buttons, links, pictures and more.  ‘toggle()’ and ‘toggleClass()’ are your workhorses in the DOM.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.DOMElement&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.otherElement&#39;</span><span class="p">).</span><span class="nx">toggleClass</span><span class="p">(</span><span class="s1">&#39;classToToggle&#39;</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+
+
+  </body>
+
+</html>

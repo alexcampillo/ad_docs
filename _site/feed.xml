@@ -1,14 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Jan 2015 22:02:19 -0600</pubDate>
-    <lastBuildDate>Mon, 19 Jan 2015 22:02:19 -0600</lastBuildDate>
+    <title>website</title>
+    <description></description>
+    <link>http://127.0.0.1:4000http://alexcampillo.github.io/ad_docs//</link>
+    <atom:link href="http://127.0.0.1:4000http://alexcampillo.github.io/ad_docs//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 20 Jan 2015 14:11:22 -0600</pubDate>
+    <lastBuildDate>Tue, 20 Jan 2015 14:11:22 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Meteor</title>
+        <description>&lt;p&gt;Meteor is a javascript development environment designed for building realtime applications. Meteor apps can deploy easily to web, iOS and android.&lt;/p&gt;
+
+&lt;h2 id=&quot;installing-meteor&quot;&gt;Installing Meteor&lt;/h2&gt;
+&lt;p&gt;First open up your terminal and copy and paste the following command&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;curl https://install.meteor.com/ | sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The install should be seamless but just in case there are any problems, refer to the official meteor documentation.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.meteor.com/install&quot;&gt;Meteor Install&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up-a-project&quot;&gt;Setting up a Project&lt;/h2&gt;
+
+&lt;p&gt;First create a directory somewhere to store all of your Meteor projects. It doesn’t have to be on the desktop, just somewhere convenient for you. &lt;/p&gt;
+
+&lt;p&gt;ex: &lt;code&gt;cd ~/Desktop &amp;amp;&amp;amp; mkdir Meteor&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then navigate to your folder and create a new Meteor project&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cd ~/Desktop/Meteor&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;meteor create yourprojectname&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Navigate into your new meteor project and type the following command, using your own project’s name.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cd yourprojectname&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;meteor run yourprojectname&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This will get your project up and running on localhost.&lt;/p&gt;
+
+&lt;h2 id=&quot;file-structure&quot;&gt;File Structure&lt;/h2&gt;
+
+&lt;p&gt;When you first create a new Meteor project you are given 3 files&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;yourproject.html&lt;/li&gt;
+  &lt;li&gt;yourproject.css&lt;/li&gt;
+  &lt;li&gt;yourproject.js&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Delete these files. Although there is no defined structure for a Meteor app we want to create some sort of organization, as you’ll soon see there will be a lot of files as your app grows.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 18 Jan 2015 08:46:55 -0600</pubDate>
+        <link>http://127.0.0.1:4000http://alexcampillo.github.io/ad_docs//meteor/2015/01/18/meteor1.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000http://alexcampillo.github.io/ad_docs//meteor/2015/01/18/meteor1.html</guid>
+        
+        
+        <category>meteor</category>
+        
+      </item>
     
       <item>
         <title>Useful JQuery</title>
@@ -102,13 +156,11 @@
 
 </description>
         <pubDate>Sun, 18 Jan 2015 08:46:55 -0600</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2015/01/18/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2015/01/18/welcome-to-jekyll.html</guid>
+        <link>http://127.0.0.1:4000http://alexcampillo.github.io/ad_docs//jquery/2015/01/18/jquery.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000http://alexcampillo.github.io/ad_docs//jquery/2015/01/18/jquery.html</guid>
         
         
-        <category>jekyll</category>
-        
-        <category>update</category>
+        <category>jquery</category>
         
       </item>
     

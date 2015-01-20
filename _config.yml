@@ -1,7 +1,7 @@
 # Site settings
 title: website
-baseurl: "http://alexcampillo.github.io/ad_docs/" # the subpath of your site, e.g. /blog/
-url: "http://alexcampillo.github.io/ad_docs/" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
